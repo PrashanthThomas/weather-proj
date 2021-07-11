@@ -33,4 +33,5 @@ If a valid city is entered
 You will see the current weather data.
 You will notice the Forecast for the data of about 5 days
 You will see the location of the city on the map
+Also notice that the app is responsive in nature.
 *****************************************************
