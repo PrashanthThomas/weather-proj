@@ -11,7 +11,7 @@ For weather api access.
 
 Note: The API-Key will give you access for about 60 hits per minute.
 *****************************************************
-The frontend(weather-frontend) needs to be built using
+The frontend(weather-frontend2) needs to be built using
 npm install
 
 Run the frontend (on port 4200) using
