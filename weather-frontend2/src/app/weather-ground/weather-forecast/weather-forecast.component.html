@@ -1,0 +1,21 @@
+<div class="weather-forecast title">Weather Forecast(5 Days)</div>
+<div class="table-container">
+  <table>
+    <tr>
+      <td>Date</td>
+      <td>Temprature</td>
+      <td>Min. Temp</td>
+      <td>Max. Temp</td>
+      <td>Humidity</td>
+    </tr>
+    <ng-container *ngIf="!hideData">
+      <tr *ngFor="let item of forecastDataList">
+        <td>{{item.date | date}}</td>
+        <td>{{item.temprature}}&#8451;</td>
+        <td>{{item.minTemp}}&#8451;</td>
+        <td>{{item.maxTemp}}&#8451;</td>
+        <td>{{item.humidity}}%</td>
+      </tr>
+    </ng-container>
+  </table>
+</div>

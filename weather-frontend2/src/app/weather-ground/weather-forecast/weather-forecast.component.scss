@@ -1,0 +1,23 @@
+td + td {
+  border-left: 1px solid #000;
+}
+
+tr + tr {
+  td {
+    border-top: 1px solid #000;
+  }
+}
+
+td {
+  width: 25%;
+}
+
+.table-container {
+  padding: 10px;
+}
+
+.weather-forecast {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}

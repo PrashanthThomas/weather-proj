@@ -1,0 +1,91 @@
+.header {
+  height: calc(60px - 20px);
+  background-color: #dcdefc;
+  padding: 10px;
+  h1 {
+    margin: 0;
+    float: right;
+  }
+}
+
+.map {
+  grid-area: map;
+  background-color: #f9fafd;
+}
+.content {
+  grid-area: content;
+  background-color: #f9fafd;
+}
+
+.forecast {
+  grid-area: forecast;
+  background-color: #f9fafd;
+}
+
+@media (min-width: 960px) {
+  .main-grid {
+    display: grid;
+    grid-template-rows: 47px calc(50% - 24px) calc(50% - 23px);
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    'input-layout input-layout'
+    'content map'
+    'forecast map';
+    height: calc(100% - 120px);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 300px) {
+  .main-grid {
+    display: block;
+    height: calc(100% - 120px);
+  }
+}
+
+
+.footer {
+  height: 60px;
+  background-color: bisque;
+}
+
+.margin-10 {
+  box-sizing: border-box;
+  margin: 10px;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+}
+
+.input-layout {
+  height: 30px;
+  input {
+    width: calc(75% - 16px);
+    height: 20px;
+    margin-right: 8px;
+  }
+  button {
+    width: 25%;
+    height: 26px;
+    padding: 0;
+  }
+}
+
+.weather-card {
+  border-radius: 5px;
+  background-color: white;
+}
+
+.version {
+  box-sizing: border-box;
+  height: 100%;
+  text-align: left;
+  padding: 20px;
+  background-color: #dcdefc;
+}
+
+.custom-button {
+  background-color: #727cf4;
+  color: white;
+  border-radius: 5px;
+}

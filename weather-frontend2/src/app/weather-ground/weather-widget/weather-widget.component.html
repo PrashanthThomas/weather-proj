@@ -1,0 +1,9 @@
+<div class="weather-widget">
+  <div class="widget-row todays-weather title">Todays Weather</div>
+  <span class="weather-data" *ngIf="!hideData && weatherData">
+  <div class="widget-row temprature">{{weatherData.temprature}}&#8451;</div>
+  <div class="widget-row temprature-range">Min: {{weatherData.minTemp}}&#8451; - Max: {{weatherData.maxTemp}}&#8451;</div>
+  <div class="widget-row feels-like">Feels Like: {{weatherData.feelsLike}}&#8451;</div>
+  <div class="widget-row humidity">Humidity: {{weatherData.humidity}}%</div>
+  </span>
+</div>
